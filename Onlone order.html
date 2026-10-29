@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAVORA | Taste the Moment</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #FFF9F0;
+    color: #263B32;
+    line-height: 1.6;
+}
+header {
+    background: #FFFFFF;
+    padding: 20px;
+    border-bottom: 2px solid #E9E2D6;
+}
+.brand {
+    font-size: 27px;
+    font-weight: bold;
+    color: #254E3D;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.brand span {
+    color: #E76F43;
+}
+nav a {
+    color: #263B32;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.hero {
+    background: #F4E8D4;
+    padding: 50px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 40px;
+    color: #254E3D;
+    text-shadow: 1px 1px 2px white;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #254E3D;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid #254E3D;
+}
+.container {
+    padding: 20px;
+}
+.food-card {
+    background: white;
+    border: 1px solid #E9E2D6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.food-photo {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #E9E2D6;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background: #E6EEDF;
+    color: #254E3D;
+}
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #E9E2D6;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+hr {
+    border: 1px solid #E9E2D6;
+    margin: 20px 0px;
+}
+footer {
+    background: #203E31;
+    color: #E8EFE6;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="brand">SAVOR<span>A</span></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<main>
+<section class="hero" id="home">
+    <h1>Good Food. <span style="color:#E76F43;">Delivered Fresh.</span></h1>
+    <p>Discover delicious meals and enjoy every bite.</p>
+    <br>
+    <a href="#menu" class="btn">Find Food</a>
+    <br><br>
+    <p><small>⚡ Fast Delivery | 🌿 Fresh & Tasty | ✓ Easy Ordering</small></p>
+</section>
+<section class="container" id="categories">
+    <h2>What Would You Like to Eat?</h2>
+    <ul>
+        <li>Burgers</li>
+        <li>Pizza</li>
+        <li>Indian</li>
+        <li>Chinese</li>
+        <li>Desserts</li>
+    </ul>
+    <dl>
+        <dt><b>WWW</b></dt>
+        <dd>World Wide Web invented by Tim Berners-Lee</dd>
+        <dt><b>DNS</b></dt>
+        <dd>Domain Name System - converts domain to IP</dd>
+    </dl>
+</section>
+<section class="container" id="menu">
+    <h2>Our Delicious Menu</h2>
+    <div class="food-card">
+        <img class="food-photo" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=650&q=80" alt="Burger">
+        <h3>🍔 Classic Veg Burger</h3>
+        <p>Burger House - Crispy patty, fresh lettuce and creamy sauce.</p>
+        <p><b>Price:</b> <mark>₹149</mark> <del>₹199</del></p>
+        <p><small>★ 4.5 | 20 min</small></p>
+        <button class="btn">Add to Cart</button>
+    </div>
+    <div class="food-card">
+        <img class="food-photo" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=650&q=80" alt="Pizza">
+        <h3>🍕 Margherita Pizza</h3>
+        <p>Pizza Planet - Classic cheese pizza with fresh herbs.</p>
+        <p><b>Price:</b> <mark>₹249</mark> <del>₹299</del></p>
+        <p><small>★ 4.7 | 30 min</small></p>
+        <button class="btn">Add to Cart</button>
+    </div>
+    <div class="food-card">
+        <img class="food-photo" src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=650&q=80" alt="Biryani">
+        <h3>🍛 Veg Biryani</h3>
+        <p>Spice Villa - Fragrant rice cooked with spices and vegetables.</p>
+        <p><b>Price:</b> <mark>₹179</mark> <del>₹219</del></p>
+        <p><small>★ 4.6 | 25 min</small></p>
+        <button class="btn">Add to Cart</button>
+    </div>
+    <div class="food-card">
+        <img class="food-photo" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=650&q=80" alt="Cake">
+        <h3>🍰 Chocolate Cake</h3>
+        <p>Sweet Corner - Rich chocolate layers with smooth frosting.</p>
+        <p><b>Price:</b> <mark>₹129</mark> <del>₹159</del></p>
+        <p><small>★ 4.9 | 20 min</small></p>
+        <button class="btn">Add to Cart</button>
+    </div>
+</section>
+<hr>
+<section class="container" id="offers">
+    <h2>Product Comparison</h2>
+    <table>
+        <tr>
+            <th>Dish</th>
+            <th>Price</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td>Veg Burger</td>
+            <td>₹149</td>
+            <td>4.5 / 5</td>
+        </tr>
+        <tr>
+            <td>Margherita Pizza</td>
+            <td>₹249</td>
+            <td>4.7 / 5</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align:center;">40% OFF on First Order - Code: SAVORA40</td>
+        </tr>
+    </table>
+</section>
+<section class="container" id="contact">
+    <h2>Order Form</h2>
+    <form>
+        <fieldset>
+            <legend>Customer Details</legend>
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter name" required>
+            <label>Email:</label>
+            <input type="email" placeholder="email@gmail.com" required>
+            <label>Password:</label>
+            <input type="password">
+            <label>Phone:</label>
+            <input type="tel" placeholder="9876543210">
+            <label>Quantity:</label>
+            <input type="number" min="1" max="10">
+            <label>Delivery Date:</label>
+            <input type="date">
+            <label>Delivery Time:</label>
+            <input type="time">
+            <label>Favorite Color:</label>
+            <input type="color">
+            <label>Upload Address Proof:</label>
+            <input type="file">
+            <label>Search Food:</label>
+            <input type="search" placeholder="Search dishes...">
+            <label>Spicy Level:</label>
+            <input type="range">
+            <p>Payment:</p>
+            <input type="radio" name="pay" style="width:auto;"> Cash
+            <input type="radio" name="pay" style="width:auto;"> Online
+            <p>Add-ons:</p>
+            <input type="checkbox" style="width:auto;"> Extra Cheese
+            <input type="checkbox" style="width:auto;"> Cold Drink
+            <label>Select Restaurant:</label>
+            <select>
+                <option>Burger House</option>
+                <option>Pizza Planet</option>
+                <optgroup label="Indian">
+                    <option>Spice Villa</option>
+                    <option>Green Bowl</option>
+                </optgroup>
+            </select>
+            <label>Delivery Address:</label>
+            <textarea rows="3" placeholder="Enter full address"></textarea>
+            <br><br>
+            <button type="submit" class="btn">Place Order</button>
+            <button type="reset" class="btn" style="background:gray;">Reset</button>
+        </fieldset>
+    </form>
+</section>
+</main>
+<footer>
+    <p><b>SAVORA</b> - Good food. Good mood.</p>
+    <p>Home | Restaurants | Menu | Offers</p>
+    <br>
+    <p>© 2026 SAVORA Food Ordering - Educational Demo</p>
+</footer>
+</body>
+</html>

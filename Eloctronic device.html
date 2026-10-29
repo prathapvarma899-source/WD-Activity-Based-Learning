@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXORA | Electronics Store</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #090d18;
+    color: #f5f6ff;
+    line-height: 1.6;
+}
+header {
+    padding: 20px;
+    background: #121a2b;
+    border-bottom: 2px solid #9274ff;
+}
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.logo span {
+    color: #5ce1e6;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.hero {
+    padding: 50px;
+    background: #10182b;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 5px black;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #9274ff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid #9274ff;
+}
+.products {
+    padding: 20px;
+}
+.product-card {
+    background: #121a2b;
+    border: 1px solid #34415a;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #34415a;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background: #182239;
+    color: #5ce1e6;
+}
+form {
+    background: #121a2b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+hr {
+    border: 1px solid #27334b;
+    margin: 20px 0px;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #a2acc4;
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="logo">NEX<span>ORA</span></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#compare">Compare</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<main>
+<section class="hero" id="home">
+    <h1>Upgrade Your Digital Life</h1>
+    <p>The future is in your hands - Best Laptops and Mobiles</p>
+    <br>
+    <a href="#products" class="btn">Explore Collection</a>
+</section>
+<section class="products" id="products">
+    <h2>Explore Products</h2>
+    <h3>Categories:</h3>
+    <ul>
+        <li>Laptops</li>
+        <li>Smartphones</li>
+        <li>Accessories</li>
+    </ul>
+    <div class="product-card">
+        <h3><span>💻</span> Nexora ProBook 14</h3>
+        <p>Powerful performance for work and study.</p>
+        <p><b>Price:</b> <mark>₹64,999</mark> <del>₹74,999</del></p>
+        <button class="btn">Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <h3><span>📱</span> Nova Smartphone 5G</h3>
+        <p>Fast connectivity and vivid visuals.</p>
+        <p><b>Price:</b> <mark>₹24,999</mark> <del>₹29,999</del></p>
+        <button class="btn">Add to Cart</button>
+    </div>
+</section>
+<hr>
+<section id="compare" style="padding: 20px;">
+    <h2>Product Comparison</h2>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>ProBook 14</th>
+            <th>Nova 5G</th>
+        </tr>
+        <tr>
+            <td><strong>Processor</strong></td>
+            <td>Intel Core i5</td>
+            <td>Octa-core</td>
+        </tr>
+        <tr>
+            <td><strong>RAM</strong></td>
+            <td>16 GB</td>
+            <td>8 GB</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">Best Products for Students</td>
+        </tr>
+    </table>
+</section>
+<section id="contact" style="padding: 20px;">
+    <h2>Contact / Order Form</h2>
+    <form>
+        <fieldset>
+            <legend>Student Details</legend>
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter name" required>
+            <label>Email:</label>
+            <input type="email" placeholder="email@gmail.com" required>
+            <label>Password:</label>
+            <input type="password">
+            <label>Phone:</label>
+            <input type="tel" placeholder="9876543210">
+            <label>Quantity:</label>
+            <input type="number" min="1" max="10">
+            <label>DOB:</label>
+            <input type="date">
+            <label>Delivery Time:</label>
+            <input type="time">
+            <label>Favorite Color:</label>
+            <input type="color">
+            <label>Upload ID:</label>
+            <input type="file">
+            <label>Search Product:</label>
+            <input type="search">
+            <label>Range:</label>
+            <input type="range">
+            <p>Gender:</p>
+            <input type="radio" name="gender" style="width:auto;"> Male
+            <input type="radio" name="gender" style="width:auto;"> Female
+            <p>Accessories:</p>
+            <input type="checkbox" style="width:auto;"> Mouse
+            <input type="checkbox" style="width:auto;"> Bag
+            <label>Select Product:</label>
+            <select>
+                <option>Laptop</option>
+                <option>Smartphone</option>
+                <optgroup label="Accessories">
+                    <option>Buds</option>
+                    <option>Power Bank</option>
+                </optgroup>
+            </select>
+            <label>Address:</label>
+            <textarea rows="3" placeholder="Enter full address"></textarea>
+            <br><br>
+            <button type="submit" class="btn">Submit Order</button>
+            <button type="reset" class="btn" style="background:gray;">Reset</button>
+        </fieldset>
+    </form>
+</section>
+<section style="padding: 20px;">
+    <h3>Web Terms:</h3>
+    <dl>
+        <dt><b>WWW</b></dt>
+        <dd>World Wide Web invented by Tim Berners-Lee</dd>
+        <dt><b>DNS</b></dt>
+        <dd>Domain Name System</dd>
+    </dl>
+</section>
+</main>
+<footer>
+    <p>© 2026 NEXORA Electronics Store</p>
+    <p>Demo website for educational purposes</p>
+</footer>
+</body>
+</html>
